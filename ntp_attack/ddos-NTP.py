@@ -248,7 +248,7 @@ def atacar(servers, attackers):
 
 
 # Leemos el fichero de atacantes para obtener los servidores NTP y de los hosts: IP, login y password
-servers_txt = open('./ntp_servers.txt', 'r').read().splitlines()
+servers_txt = open('./ntp.txt', 'r').read().splitlines()
 for n in servers_txt:
 	if n[0]!='#':
 		servers.append(n)
